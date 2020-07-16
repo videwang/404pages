@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Error 404, Not Found - Vianet.ca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style>
+        html, body, * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .d404 {
+            font-family: 'Alfa Slab One', cursive;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("./img/bg.jpg");
+            font-size: 14vw;
+            text-align: center;
+            line-height: 1.2em;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        .d404>.subtitle {
+            font-size: 3vw;
+            line-height: 1.2em;
+            display: block;
+        }
+        .description {
+            font-size: 1.3rem;
+            color: #999;
+        }
+        .logo>img {
+            width: 100px;
+            position: absolute;
+            bottom: 1rem;
+            left: calc(50% - 50px);
+        }
+        .option {
+            display: flex;
+            flex-direction: row;
+            padding: 2rem;
+        }
+        .option>.item {
+            padding: .8rem;
+            background: #fff;
+            height: 3.9rem;
+            width: 3.9rem;
+            border-radius: 50%;
+            text-align: center;
+            margin: .6rem;
+            color: #2b467d;
+            border: 3px solid #2b467d;
+        }
+        .option>.item>a {
+            color: #2b467d;
+        }
+        .option>.item:hover {
+            background: #eee;
+        }
+        @media screen and (max-width: 768px) {
+            .d404 {
+                font-size: 21vw;
+            }
+            .d404>.subtitle {
+                font-size: 4.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.vianet.ca/assets/images/vianet_wbg.png" alt="Vianet Logo">
+        </div>
+        <div class="d404">
+            Oops!<br>
+            <span class="subtitle">
+                Error 404 - Not Found
+            </span>
+        </div>
+        <div class="description">
+            The resource is unknown or does not exist.
+        </div>
+        <div class="option">
+            <div class="item">
+                <a href="javascript:history.go(-1);">
+                    <svg id="i-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                        <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                    </svg>
+                </a>
+            </div>
+            <div class="item">
+                <a href="/">
+                    <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                        <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
