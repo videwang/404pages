@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Error 404, Not Found - Vianet.ca</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <style>
         html, body, * {
             margin: 0;
@@ -29,11 +30,11 @@
             padding-top: 200px;
         }
         .d404 {
-            /*font-family: 'Alfa Slab One', cursive;*/
-            font-family: 'serifa-bt', sans-serif;
+            /*font-family: 'serifa-bt', sans-serif;*/
+            font-family: "serifa-bt", sans-serif;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url("./img/bg.jpg");
+            background-image: url("./img/bg.jpeg");
             font-size: 14vw;
             text-align: center;
             line-height: 1.2em;
@@ -79,16 +80,17 @@
             background: #eee;
         }
         .head {
-            background-color: #0053a0;
+            /*background-color: #0053a0;*/
             width: 100%;
+            max-width: 700px;
             position: absolute;
             top: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 2rem;
-            border-bottom: 5px solid #f55f23;
-            background-image: url("./img/b.svg");
+            border-bottom: 5px solid #f47532;
+            /*background-image: url("./img/b.svg");*/
             background-size: 700px;
         }
         .head>img {
@@ -106,35 +108,35 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="head">
-            <img src="./img/logo.png" alt="Vianet Logo">
-        </div>
-        <div class="d404">
-            Oops!<br>
-            <span class="subtitle">
+<div class="container">
+    <div class="head">
+        <img src="./img/logo.png" alt="Flextv Logo">
+    </div>
+    <div class="d404">
+        Oops!<br>
+        <span class="subtitle">
                 Error 404 - Not Found
             </span>
+    </div>
+    <div class="description">
+        The resource you are trying to access is either unknown, doesn’t exist, or might just be lost in space.
+    </div>
+    <div class="option">
+        <div class="item">
+            <a href="javascript:history.go(-1);">
+                <svg id="i-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                </svg>
+            </a>
         </div>
-        <div class="description">
-            The resource you are trying to access is either unknown, doesn’t exist, or might just be lost in space.
-        </div>
-        <div class="option">
-            <div class="item">
-                <a href="javascript:history.go(-1);">
-                    <svg id="i-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-                        <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
-                    </svg>
-                </a>
-            </div>
-            <div class="item">
-                <a href="/">
-                    <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-                        <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
-                    </svg>
-                </a>
-            </div>
+        <div class="item">
+            <a href="/">
+                <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
+                </svg>
+            </a>
         </div>
     </div>
+</div>
 </body>
 </html>
